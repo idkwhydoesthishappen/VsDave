@@ -63,6 +63,9 @@ class HealthIcon extends FlxSprite
 
 		animation.add('the-duo', [16, 17], 0, false, isPlayer);
 		animation.add('what-lmao', [18, 19], 0, false, isPlayer);
+		animation.add('sky', [42, 43], 0, false, isPlayer);
+		animation.add('sky-annoyed', [42, 43], 0, false, isPlayer);
+		animation.add('sky-mad', [44], 0, false, isPlayer);
 		animation.play(char);
 		if (noAaChars.contains(char))
 		{

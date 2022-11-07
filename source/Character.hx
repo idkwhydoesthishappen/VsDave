@@ -407,6 +407,101 @@ class Character extends FlxSprite
 				nativelyPlayable = true;
 	
 				flipX = true;
+				
+			case 'sky':
+				frames = Paths.getSparrowAtlas('sky/sky_assets');
+				animation.addByIndices('danceRight', 'sky idle', [0, 1, 2, 3, 4, 5, 6, 7], "", 24, false);
+				animation.addByIndices('danceLeft', 'sky idle', [8, 9, 10, 11, 12, 13, 14, 15], "", 24, false);
+				animation.addByPrefix('singUP', 'sky up', 24, false);
+				animation.addByPrefix('singDOWN', 'sky down', 24, false);
+				animation.addByPrefix('singLEFT', 'sky left', 24, false);
+				animation.addByPrefix('singRIGHT', 'sky right', 24, false);
+				
+				addOffset('danceRight');
+				addOffset('danceLeft');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				
+				playAnim('danceRight');
+			
+			case 'sky-annoyed':
+				frames = Paths.getSparrowAtlas('sky/sky_annoyed_assets');
+				animation.addByIndices('danceRight', 'sky annoyed idle', [0, 1, 2, 3, 4, 5, 6, 7], "", 24, false);
+				animation.addByIndices('danceLeft', 'sky annoyed idle', [8, 9, 10, 11, 12, 13, 14, 15], "", 24, false);
+				animation.addByPrefix('singUP', 'sky annoyed up', 24, false);
+				animation.addByPrefix('singDOWN', 'sky annoyed down', 24, false);
+				animation.addByPrefix('singLEFT', 'sky annoyed left', 24, false);
+				animation.addByPrefix('singRIGHT', 'sky annoyed right', 24, false);
+				
+				animation.addByPrefix('oh', 'sky annoyed oh', 24, true);
+				animation.addByPrefix('grr', 'sky annoyed grr', 24, true);
+				animation.addByPrefix('huh', 'sky annoyed huh', 24, true);
+				animation.addByPrefix('ugh', 'sky annoyed ugh', 24, false);
+				animation.addByPrefix('manifest', 'sky annoyed manifest', 24, false);
+				
+				animation.addByIndices('danceRight-alt', 'sky annoyed alt idle', [0, 1, 2, 3, 4, 5, 6, 7], "", 24, false);
+				animation.addByIndices('danceLeft-alt', 'sky annoyed alt idle', [8, 9, 10, 11, 12, 13, 14, 15], "", 24, false);
+				animation.addByPrefix('singUP-alt', 'sky annoyed alt up', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'sky annoyed alt down', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'sky annoyed alt left', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'sky annoyed alt right', 24, false);
+				
+				addOffset('danceRight');
+				addOffset('danceLeft');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				
+				addOffset("oh");
+				addOffset("grr");
+				addOffset("huh");
+				addOffset("ugh");
+				addOffset("manifest");
+				
+				addOffset('danceRight-alt');
+				addOffset('danceLeft-alt');
+				addOffset("singUP-alt");
+				addOffset("singRIGHT-alt");
+				addOffset("singLEFT-alt");
+				addOffset("singDOWN-alt");
+				
+				
+				playAnim('danceRight');
+				
+			case 'sky-mad':
+				frames = Paths.getSparrowAtlas('sky/sky_mad_assets');
+				animation.addByIndices('danceRight', 'sky mad idle', [0, 1, 2, 3, 4, 5, 6, 7], "", 24, false);
+				animation.addByIndices('danceLeft', 'sky mad idle', [8, 9, 10, 11, 12, 13, 14, 15], "", 24, false);
+				animation.addByPrefix('singUP', 'sky mad up', 24, false);
+				animation.addByPrefix('singDOWN', 'sky mad down', 24, false);
+				animation.addByPrefix('singLEFT', 'sky mad left', 24, false);
+				animation.addByPrefix('singRIGHT', 'sky mad right', 24, false);
+				
+				animation.addByIndices('danceRight-alt', 'sky mad idle', [0, 1, 2, 3, 4, 5, 6, 7], "", 24, false);
+				animation.addByIndices('danceLeft-alt', 'sky mad idle', [8, 9, 10, 11, 12, 13, 14, 15], "", 24, false);
+				animation.addByPrefix('singUP-alt', 'sky mad up', 24, false);
+				animation.addByPrefix('singDOWN-alt', 'sky mad down', 24, false);
+				animation.addByPrefix('singLEFT-alt', 'sky mad left', 24, false);
+				animation.addByPrefix('singRIGHT-alt', 'sky mad right', 24, false);
+				
+				addOffset('danceRight-alt');
+				addOffset('danceLeft-alt');
+				addOffset("singUP-alt");
+				addOffset("singRIGHT-alt");
+				addOffset("singLEFT-alt");
+				addOffset("singDOWN-alt");
+				
+				addOffset('danceRight');
+				addOffset('danceLeft');
+				addOffset("singUP");
+				addOffset("singRIGHT");
+				addOffset("singLEFT");
+				addOffset("singDOWN");
+				
+				playAnim('danceRight');	
 
 			case 'bf-christmas':
 				var tex = Paths.getSparrowAtlas('christmas/bfChristmas');

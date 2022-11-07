@@ -23,3 +23,6 @@ marcello-dave
 bf-christmas
 gf-christmas
 bf-pixel
+sky
+sky-annoyed
+sky-mad
